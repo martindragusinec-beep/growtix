@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Growtix — Performance agency, která škáluje značky</title>
+<meta name="description" content="Performance agentura z Prahy a Brna. PPC, SEO, paid social, analytika a růstové experimenty řízené podle marže.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/growtix.css">
+</head>
+<body>
+
+<header class="header" id="gxHeader">
+  <div class="container container--wide">
+    <div class="header__inner">
+      <a href="#top" class="brand" aria-label="Growtix — domů">
+        <span class="brand__mark" aria-hidden="true">g</span>
+        <span>growtix</span>
+      </a>
+      <nav class="nav" aria-label="Hlavní">
+        <button type="button" class="nav__link nav__trigger" id="gxMegaTrigger" aria-haspopup="true" aria-expanded="false" aria-controls="gxMega">
+          Služby
+          <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <a href="#approach" class="nav__link">Přístup</a>
+        <a href="#work" class="nav__link">Práce</a>
+        <a href="#journal" class="nav__link">Journal</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+      </nav>
+      <div class="header__actions">
+        <button class="burger" aria-label="Menu"><svg width="16" height="12" viewBox="0 0 18 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M1 1h16M1 7h16M1 13h16"/></svg></button>
+        <a href="#cta" class="btn btn--primary">Začít spolupráci</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mega" id="gxMega" role="region" aria-label="Služby">
+    <div class="container container--wide">
+      <div class="mega__inner">
+        <div class="mega__list">
+          <a href="sluzby/ppc.html" class="mega__item"><span class="mega__num">01</span><span class="mega__title">PPC &amp; <em>Paid</em></span><span class="mega__desc">Google · Meta · LinkedIn · TikTok</span></a>
+          <a href="sluzby/seo.html" class="mega__item"><span class="mega__num">02</span><span class="mega__title">SEO &amp; <em>GEO</em></span><span class="mega__desc">Organika + LLM viditelnost</span></a>
+          <a href="sluzby/email.html" class="mega__item"><span class="mega__num">03</span><span class="mega__title"><em>E-mail</em> marketing</span><span class="mega__desc">Flows · retence · transakce</span></a>
+          <a href="sluzby/growth-hacking.html" class="mega__item"><span class="mega__num">04</span><span class="mega__title">Growth &amp; <em>LinkedIn</em></span><span class="mega__desc">B2B outreach · automatizace</span></a>
+          <a href="#services" class="mega__item"><span class="mega__num">05</span><span class="mega__title">RTB &amp; <em>DSP</em></span><span class="mega__desc">Programatika · retargeting</span></a>
+          <a href="sluzby/ux-ui.html" class="mega__item"><span class="mega__num">06</span><span class="mega__title">UX &amp; <em>UI</em></span><span class="mega__desc">Audit · design · implementace</span></a>
+        </div>
+        <div class="mega__cta">
+          <span class="eyebrow"><span class="dot"></span>Zdarma</span>
+          <div class="mega__cta-title">PPC audit <em>do 5</em> pracovních dní.</div>
+          <a href="#cta" class="btn btn--dark" style="align-self:flex-start">Objednat audit
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- =========== HERO =========== -->
+<section class="hero hero--home" aria-labelledby="heroTitle">
+  <div class="container container--wide">
+
+    <div class="hero-home">
+      <span class="eyebrow"><span class="dot"></span>We are Growtix · Performance agency</span>
+
+      <h1 class="hero-home__title" id="heroTitle">
+        Rosteme firmy, <em>které chtějí víc</em>
+      </h1>
+
+      <p class="hero-home__lead">Stavíme růst skrze data, ne pocity. PPC, paid social, RTB, SEO a analytika v jedné datové ose — se zaměřením na byznysový dopad, ne vanity metriky.</p>
+
+      <div class="hero-home__actions">
+        <a href="#cta" class="btn btn--primary">Domluvit 30min hovor
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+        <a href="#work" class="btn btn--outline-light">Prohlédnout práce</a>
+      </div>
+
+      <div class="hero-home__stats" role="list" aria-label="Klíčová čísla">
+        <div class="hero-stat" role="listitem">
+          <div class="hero-stat__num">+232<span>%</span></div>
+          <div class="hero-stat__lbl">průměrný<br>nárůst ROAS</div>
+        </div>
+        <div class="hero-stat" role="listitem">
+          <div class="hero-stat__num">150+</div>
+          <div class="hero-stat__lbl">značek<br>v portfoliu</div>
+        </div>
+        <div class="hero-stat" role="listitem">
+          <div class="hero-stat__num">10<span>let</span></div>
+          <div class="hero-stat__lbl">na trhu<br>od 2016</div>
+        </div>
+        <div class="hero-stat" role="listitem">
+          <div class="hero-stat__num">&lt;24<span>h</span></div>
+          <div class="hero-stat__lbl">odpověď<br>na poptávku</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hero-home__floats" aria-hidden="true">
+    <div class="hero-home__float hero-home__float--1">
+      <div class="tile tile--mint">
+        <span class="tile__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7M9 7h8v8"/></svg>ROAS</span>
+        <div>
+          <div class="tile-kpi__label">E-commerce</div>
+          <div class="tile-kpi__val">340<em>%</em></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-home__float hero-home__float--2">
+      <div class="tile tile-seal">
+        <div class="tile-seal__ring">
+          <svg viewBox="0 0 100 100" width="100%" height="100%">
+            <defs><path id="circHome" d="M50,50 m-40,0 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0"/></defs>
+            <text fill="#2AE889" font-family="monospace" font-size="9" letter-spacing="3">
+              <textPath href="#circHome">CONVERT · GROW · STRATEGIZE · OPTIMIZE · </textPath>
+            </text>
+          </svg>
+        </div>
+        <div class="tile-seal__glyph">G</div>
+      </div>
+    </div>
+    <div class="hero-home__float hero-home__float--3">
+      <div class="tile tile--dark">
+        <div>
+          <div class="tile-kpi__label">Pipeline · 6M</div>
+          <div class="tile-kpi__val"><em>+4,1</em>M<span class="arr">↑</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-home__float hero-home__float--4">
+      <div class="tile tile--cream">
+        <div>
+          <div class="tile-kpi__label">Konverze</div>
+          <div class="tile-kpi__val">+58<em>%</em></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee" aria-label="Platformy">
+  <div class="container container--wide">
+    <div class="marquee__row">
+      <div class="marquee__label">Platformy</div>
+      <div class="marquee__mask">
+        <div class="marquee__track">
+          <span class="marquee__item"><img src="https://cdn.simpleicons.org/googleads/f4efe5" alt="" width="20" height="20" onerror="this.style.display='none'">Google Ads</span>
+          <span class="marquee__item"><img src="https://cdn.simpleicons.org/meta/f4efe5" alt="" width="20" height="20" onerror="this.style.display='none'">Meta Business</span>
+          <span class="marquee__item">LinkedIn Ads</span>
+          <span class="marquee__item"><img src="https://cdn.simpleicons.org/tiktok/f4efe5" alt="" width="20" height="20" onerror="this.style.display='none'">TikTok</span>
+          <span class="marquee__item">Microsoft Ads</span>
+          <span class="marquee__item">Sklik</span>
+          <span class="marquee__item"><img src="https://cdn.simpleicons.org/pinterest/f4efe5" alt="" width="20" height="20" onerror="this.style.display='none'">Pinterest</span>
+          <span class="marquee__item"><img src="https://cdn.simpleicons.org/reddit/f4efe5" alt="" width="20" height="20" onerror="this.style.display='none'">Reddit</span>
+          <span class="marquee__item"><img src="https://cdn.simpleicons.org/x/f4efe5" alt="" width="20" height="20" onerror="this.style.display='none'">X (Twitter)</span>
+          <span class="marquee__item"><img src="https://cdn.simpleicons.org/google/f4efe5" alt="" width="20" height="20" onerror="this.style.display='none'">Google MP</span>
+          <span class="marquee__item">Klaviyo</span>
+          <span class="marquee__item">Heureka</span>
+          <!-- duplicate for seamless loop -->
+          <span class="marquee__item" aria-hidden="true"><img src="https://cdn.simpleicons.org/googleads/f4efe5" alt="" width="20" height="20" onerror="this.style.display='none'">Google Ads</span>
+          <span class="marquee__item" aria-hidden="true"><img src="https://cdn.simpleicons.org/meta/f4efe5" alt="" width="20" height="20" onerror="this.style.display='none'">Meta Business</span>
+          <span class="marquee__item" aria-hidden="true">LinkedIn Ads</span>
+          <span class="marquee__item" aria-hidden="true"><img src="https://cdn.simpleicons.org/tiktok/f4efe5" alt="" width="20" height="20" onerror="this.style.display='none'">TikTok</span>
+          <span class="marquee__item" aria-hidden="true">Microsoft Ads</span>
+          <span class="marquee__item" aria-hidden="true">Sklik</span>
+          <span class="marquee__item" aria-hidden="true"><img src="https://cdn.simpleicons.org/pinterest/f4efe5" alt="" width="20" height="20" onerror="this.style.display='none'">Pinterest</span>
+          <span class="marquee__item" aria-hidden="true"><img src="https://cdn.simpleicons.org/reddit/f4efe5" alt="" width="20" height="20" onerror="this.style.display='none'">Reddit</span>
+          <span class="marquee__item" aria-hidden="true"><img src="https://cdn.simpleicons.org/x/f4efe5" alt="" width="20" height="20" onerror="this.style.display='none'">X (Twitter)</span>
+          <span class="marquee__item" aria-hidden="true"><img src="https://cdn.simpleicons.org/google/f4efe5" alt="" width="20" height="20" onerror="this.style.display='none'">Google MP</span>
+          <span class="marquee__item" aria-hidden="true">Klaviyo</span>
+          <span class="marquee__item" aria-hidden="true">Heureka</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =========== INTRO (cream band) =========== -->
+<section class="band intro reveal" id="approach" aria-labelledby="introTitle">
+  <div class="container">
+    <div class="intro__grid">
+      <div class="intro__lead-card">
+        <span class="eyebrow"><span class="dot"></span>Přístup · 01</span>
+        <h3 id="introTitle">Tři disciplíny, <em>jedna</em> datová osa.</h3>
+        <p>Nejsme od kampaní. Vedeme marketing jako investici — od akvizice přes atribuci až po pipeline obhájitelnou před CFO.</p>
+        <a href="#services" class="btn btn--primary">Všechny služby
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="intro-card">
+        <div class="intro-card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-5"/></svg></div>
+        <h4>Datový základ</h4>
+        <p>Server-side GTM, GA4, Looker a BigQuery propojené do jednoho reportingu. Žádné rozporuplné dashboardy.</p>
+        <ul>
+          <li>sGTM &amp; Consent Mode v2</li>
+          <li>GA4 + BigQuery export</li>
+          <li>Looker Studio dashboardy</li>
+        </ul>
+      </div>
+      <div class="intro-card">
+        <div class="intro-card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg></div>
+        <h4>Akvizice podle marže</h4>
+        <p>PPC, paid social, SEO a RTB pod jedním KPI stromem. Cílíme na ROAS, CAC a LTV — ne na vanity.</p>
+        <ul>
+          <li>Jeden tým napříč kanály</li>
+          <li>Týdenní optimalizace</li>
+          <li>Fixní cena na 3 měsíce</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== FEATURE STRIP =========== -->
+<section class="feature-strip reveal" aria-label="Ukázka">
+  <div class="container">
+    <div class="feature-strip__media">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1800&q=80" alt="Tým na strategickém workshopu">
+    </div>
+    <p class="feature-strip__caption">
+      „Poprvé jsme měli pipeline, <em>která se dala obhájit před boardem</em> — a rozpočet, který nikdo nemusel bránit před CFO."
+    </p>
+  </div>
+</section>
+
+<!-- =========== WHAT WE DO =========== -->
+<section class="band band--darker wwd reveal" id="services" aria-labelledby="servicesTitle">
+  <div class="container">
+    <div class="sec-head">
+      Služby · 02</span>
+      <h2 class="sec-head__title" id="servicesTitle">Co <em>děláme</em>.</h2>
+      <p class="sec-head__lead">Performance stack, který funguje jako jeden P&amp;L. Bez handoffů mezi agenturami, bez ztracené atribuce.</p>
+    </div>
+
+    <div class="wwd__grid">
+      <a class="wwd-item" href="sluzby/ppc.html">
+        <div class="wwd-item__num">01</div>
+        <h3 class="wwd-item__title">PPC &amp; <em>Paid social</em></h3>
+        <p class="wwd-item__body">Google, Meta, LinkedIn, TikTok a Microsoft řízené podle marže, ne vanity metrik.</p>
+        <div class="wwd-item__tags"><span class="tag-pill"><img src="https://cdn.simpleicons.org/googleads/2ae889" alt="" width="14" height="14" onerror="this.remove()">Google</span><span class="tag-pill"><img src="https://cdn.simpleicons.org/meta/2ae889" alt="" width="14" height="14" onerror="this.remove()">Meta</span><span class="tag-pill">LinkedIn</span></div>
+        <span class="wwd-item__cta">Zjistit více <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        <span class="wwd-item__arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="wwd-item" href="sluzby/ppc.html">
+        <div class="wwd-item__num">02</div>
+        <h3 class="wwd-item__title">SEO &amp; <em>GEO</em></h3>
+        <p class="wwd-item__body">Organická viditelnost a pozice v LLM odpovědích ChatGPT a Perplexity.</p>
+        <div class="wwd-item__tags"><span class="tag-pill">Tech SEO</span><span class="tag-pill">Content</span><span class="tag-pill">LLM</span></div>
+        <span class="wwd-item__cta">Zjistit více <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        <span class="wwd-item__arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="wwd-item" href="sluzby/ppc.html">
+        <div class="wwd-item__num">03</div>
+        <h3 class="wwd-item__title"><em>E-mail</em> marketing</h3>
+        <p class="wwd-item__body">Flows, retence, transakce. Druhá nejziskovější linka hned vedle akvizice.</p>
+        <div class="wwd-item__tags"><span class="tag-pill">Klaviyo</span><span class="tag-pill">Ecomail</span><span class="tag-pill">Customer.io</span></div>
+        <span class="wwd-item__cta">Zjistit více <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        <span class="wwd-item__arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="wwd-item" href="sluzby/ppc.html">
+        <div class="wwd-item__num">04</div>
+        <h3 class="wwd-item__title">RTB &amp; <em>programatika</em></h3>
+        <p class="wwd-item__body">DSP kampaně, retargeting a brand uplift pro značky, kterým nestačí search a social.</p>
+        <div class="wwd-item__tags"><span class="tag-pill">DV360</span><span class="tag-pill">StackAdapt</span><span class="tag-pill">R-TB</span></div>
+        <span class="wwd-item__cta">Zjistit více <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        <span class="wwd-item__arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="wwd-item" href="sluzby/ppc.html">
+        <div class="wwd-item__num">05</div>
+        <h3 class="wwd-item__title">UX &amp; <em>UI design</em></h3>
+        <p class="wwd-item__body">Konverzní landing pages a design systémy, které podpoří akvizici, ne překážejí jí.</p>
+        <div class="wwd-item__tags"><span class="tag-pill"><img src="https://cdn.simpleicons.org/figma/2ae889" alt="" width="14" height="14" onerror="this.remove()">Figma</span><span class="tag-pill"><img src="https://cdn.simpleicons.org/webflow/2ae889" alt="" width="14" height="14" onerror="this.remove()">Webflow</span><span class="tag-pill"><img src="https://cdn.simpleicons.org/shopify/2ae889" alt="" width="14" height="14" onerror="this.remove()">Shopify</span></div>
+        <span class="wwd-item__cta">Zjistit více <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        <span class="wwd-item__arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="wwd-item" href="sluzby/ppc.html">
+        <div class="wwd-item__num">06</div>
+        <h3 class="wwd-item__title">Růstové <em>experimenty</em></h3>
+        <p class="wwd-item__body">CRO, A/B testy a analytika s jasnou hypotézou a obhájeným statistickým výstupem.</p>
+        <div class="wwd-item__tags"><span class="tag-pill">VWO</span><span class="tag-pill"><img src="https://cdn.simpleicons.org/googleanalytics/2ae889" alt="" width="14" height="14" onerror="this.remove()">GA4</span><span class="tag-pill"><img src="https://cdn.simpleicons.org/hotjar/2ae889" alt="" width="14" height="14" onerror="this.remove()">Hotjar</span></div>
+        <span class="wwd-item__cta">Zjistit více <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        <span class="wwd-item__arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========== CASES =========== -->
+<section class="band cases reveal" id="work" aria-labelledby="workTitle">
+  <div class="container">
+    <div class="sec-head">
+      Výsledky · 03</span>
+      <h2 class="sec-head__title">Čísla, která <em>mluví</em> místo nás.</h2>
+      <p class="sec-head__lead">Výběr z portfolia 2023—2025 napříč e-com, SaaS a enterprise segmentem.</p>
+    </div>
+
+    <div class="case-hero">
+      <div class="case-hero__media">
+        <div class="chip">E-commerce · 2024</div>
+        <div>
+          <div class="pct">8<em>×</em></div>
+          <div class="sub">nárůst ROAS za 6 měsíců při stejném mediálním budgetu</div>
+        </div>
+      </div>
+      <div class="case-hero__text">
+        <span class="eyebrow" style="margin-bottom:1rem"><span class="dot"></span>Case · Nordix</span>
+        <h3>Přestavěli jsme feed, zavedli sGTM a <em>přepsali strukturu kampaní</em> podle marže.</h3>
+        <p>Obrat vzrostl 3,4× při stejném budgetu. Dnes řídí klient rozpočet podle LTV kohorty, ne podle ROAS poslední objednávky.</p>
+        <a href="#cta" class="btn btn--dark">Celá case study
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="case-row">
+      <article class="case-card">
+        <span class="case-card__tag">B2B SaaS · 2024</span>
+        <div class="case-card__metric">+<em>4,1</em>M</div>
+        <div class="case-card__label">MQL v pipeline za 12 měsíců. LinkedIn ABM + account-based SEO pro 20 klíčových účtů.</div>
+        <div class="case-card__author">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="">
+          <div><strong>Karolína Šimková</strong><br>CMO · Nimbus Analytics</div>
+        </div>
+      </article>
+      <article class="case-card">
+        <span class="case-card__tag">D2C Fashion · 2025</span>
+        <div class="case-card__metric"><em>−42</em>%</div>
+        <div class="case-card__label">CAC při udržení objemu. Creative testing a server-side události v Meta a TikTok.</div>
+        <div class="case-card__author">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80" alt="">
+          <div><strong>Lucie Havelková</strong><br>Brand Lead · Loom &amp; Loop</div>
+        </div>
+      </article>
+      <article class="case-card">
+        <span class="case-card__tag">Finance · 2023</span>
+        <div class="case-card__metric"><em>3,2</em>×</div>
+        <div class="case-card__label">MQL→SQL konverze po přepsání atribuce a zavedení weekly review s CMO a CFO.</div>
+        <div class="case-card__author">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="">
+          <div><strong>Radek Novotný</strong><br>Head of Growth · Trevix</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========== QUOTE =========== -->
+<section class="quote reveal" aria-label="Citát">
+  <div class="container">
+    <p class="quote__text">„Přestali jsme utrácet naslepo. <em>Každá koruna má dnes jméno</em> a cestu k pipeline."</p>
+    <div class="quote__author">
+      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="">
+      <div>— <strong style="color:var(--on-dark)">Petr Doležal</strong>, CMO · Halstein Group</div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== JOURNAL =========== -->
+<section class="band journal reveal" id="journal" aria-labelledby="journalTitle">
+  <div class="container">
+    <div class="sec-head">
+      Journal · 04</span>
+      <h2 class="sec-head__title" id="journalTitle">Píšeme jen o tom, <em>co funguje</em>.</h2>
+      <p class="sec-head__lead">Postřehy z kampaní, které reálně běží — ne kurátorované best practice z loňské konference.</p>
+    </div>
+
+    <div class="journal__grid">
+      <a href="#" class="journal-card">
+        <div class="journal-card__media"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt=""></div>
+        <div class="journal-card__meta"><span>PPC · 12 min</span><span>03 · 2026</span></div>
+        <h3 class="journal-card__title">Server-side GTM bez drama: <em>30denní</em> roadmapa</h3>
+        <p class="journal-card__excerpt">Jak nasadit sGTM tak, aby byl projekt hotový za 30 dní a přežil Consent Mode v2.</p>
+        <span class="journal-card__link">Číst článek <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+      </a>
+      <a href="#" class="journal-card">
+        <div class="journal-card__media"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80" alt=""></div>
+        <div class="journal-card__meta"><span>SEO · 9 min</span><span>02 · 2026</span></div>
+        <h3 class="journal-card__title">LLM SEO: co chce ChatGPT a <em>Perplexity</em> jinak</h3>
+        <p class="journal-card__excerpt">Tři technické kroky, které zvedly citaci klienta v AI odpovědích o 240 % za 90 dní.</p>
+        <span class="journal-card__link">Číst článek <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+      </a>
+      <a href="#" class="journal-card">
+        <div class="journal-card__media"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80" alt=""></div>
+        <div class="journal-card__meta"><span>Analytika · 14 min</span><span>01 · 2026</span></div>
+        <h3 class="journal-card__title">Atribuce, kterou <em>obhájíte</em> před CFO</h3>
+        <p class="journal-card__excerpt">Proč multi-touch dashboardy selhávají a jaké tři metriky v GA4 stačí sledovat.</p>
+        <span class="journal-card__link">Číst článek <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========== FAQ =========== -->
+<section class="band faq reveal" id="faq" aria-labelledby="faqTitle">
+  <div class="container">
+    <div class="faq__grid">
+      <div class="faq__side">
+        <span class="eyebrow"><span class="dot"></span>FAQ · 05</span>
+        <h2 class="sec-head__title" style="text-align:left; margin-top:1rem" id="faqTitle">Odpovědi dřív, <em>než se zeptáte</em>.</h2>
+        <p>Pokud vaše otázka v seznamu není, ozvěte se. V prvním hovoru dostanete konkrétní směr, ne prodejní pitch.</p>
+        <a href="#cta" class="btn btn--primary" style="margin-top:1rem">Domluvit hovor
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="faq__list" id="gxFaq">
+        <div class="faq-item" data-open="true">
+          <button class="faq-item__btn" aria-expanded="true">
+            <span class="faq-item__num">Q.01</span>
+            <span class="faq-item__q">Jaké služby nabízíte?</span>
+            <span class="faq-item__icon" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-item__panel"><div><p>PPC a paid social (Google, Meta, LinkedIn, TikTok, Microsoft), SEO &amp; GEO, e-mail marketing, RTB, UX/UI design a růstové experimenty. Nejčastěji vedeme kombinaci kanálů v rámci jednoho týmu.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__btn" aria-expanded="false">
+            <span class="faq-item__num">Q.02</span>
+            <span class="faq-item__q">Jak dlouho trvá, než jsou vidět výsledky?</span>
+            <span class="faq-item__icon" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-item__panel"><div><p>První učení vidíme do 14 dnů. Stabilní výsledky u existujících účtů typicky v 6.–10. týdnu, u nových účtů po první kalibraci kreativ a konverzního modelu.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__btn" aria-expanded="false">
+            <span class="faq-item__num">Q.03</span>
+            <span class="faq-item__q">Děláte i pro menší firmy a start-upy?</span>
+            <span class="faq-item__icon" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-item__panel"><div><p>Ano. Máme balíček pro značky s měsíčním mediálním rozpočtem od 50&nbsp;000&nbsp;Kč. U start-upů dáváme důraz na rychlý setup měření, aby se peníze neutratily naslepo.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__btn" aria-expanded="false">
+            <span class="faq-item__num">Q.04</span>
+            <span class="faq-item__q">Kolik spolupráce stojí?</span>
+            <span class="faq-item__icon" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-item__panel"><div><p>Fee se odvíjí od rozsahu kanálů, typicky 35&nbsp;000–120&nbsp;000&nbsp;Kč měsíčně. Po úvodním hovoru dostanete konkrétní scope a fixní cenu na tři měsíce.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__btn" aria-expanded="false">
+            <span class="faq-item__num">Q.05</span>
+            <span class="faq-item__q">Pokračujete v péči i po spuštění?</span>
+            <span class="faq-item__icon" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-item__panel"><div><p>Spolupráce je typicky dlouhodobá — týdenní optimalizace, měsíční reporting a kvartální strategický review s marketingovým nebo výkonným ředitelem.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== CTA MINT =========== -->
+<section class="cta-mint reveal" aria-label="Výzva k akci">
+  <div class="container">
+    <span class="cta-mint__eyebrow">Připraveni?</span>
+    <h3 class="cta-mint__title">Pojďme váš marketing <em>obhájit</em> před CFO.</h3>
+    <div class="cta-mint__actions">
+      <a href="#cta" class="btn btn--dark">Domluvit 30min hovor
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+      </a>
+      <a href="#work" class="btn btn--outline-dark">Vidět reference</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========== CONTACT =========== -->
+<section class="band contact reveal" id="cta" aria-labelledby="ctaTitle">
+  <div class="container">
+    <div class="contact__grid">
+      <div class="contact__side">
+        <span class="eyebrow"><span class="dot"></span>Kontakt · 06</span>
+        <h3 id="ctaTitle">Domluvte si <em>strategický</em> hovor.</h3>
+        <p>30 minut. Projdeme váš stav, cíle a první hypotézy. Žádný sales tlak — jen konkrétní směr.</p>
+
+        <ul class="trust-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Odpověď do <strong>24 hodin</strong> v pracovní dny.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6z"/></svg><span><strong>Privacy-first</strong> — vaše údaje nepředáváme třetím stranám.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span><strong>Fixní cena</strong> na 3 měsíce. Scope dostanete po úvodním hovoru.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.9 5.6a2 2 0 0 0 2.2 0L21 8M5 5h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></svg><span>Žádný spam. Newsletter jen se souhlasem.</span></li>
+        </ul>
+      </div>
+
+      <form class="form" id="gxLeadForm" novalidate>
+        <div class="form__head">
+          <div class="form__dots" aria-hidden="true">
+            <span class="form__dot is-active" data-dot="1"></span>
+            <span class="form__dot" data-dot="2"></span>
+            <span class="form__dot" data-dot="3"></span>
+          </div>
+          <div class="form__count">KROK <span id="gxStepNum">01</span>/03</div>
+        </div>
+
+        <div class="step is-active" data-step="1">
+          <h4 class="step__title">Co vás <em>zajímá</em>?</h4>
+          <p class="step__sub">Vyberte jednu nebo více služeb.</p>
+          <div class="choices">
+            <label class="choice"><input type="checkbox" name="service" value="PPC"><span class="choice__box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><span class="choice__lbl">PPC &amp; Paid social</span><span class="choice__desc">Google · Meta · LinkedIn</span></span></label>
+            <label class="choice"><input type="checkbox" name="service" value="SEO"><span class="choice__box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><span class="choice__lbl">SEO &amp; GEO</span><span class="choice__desc">Organická viditelnost</span></span></label>
+            <label class="choice"><input type="checkbox" name="service" value="Email"><span class="choice__box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><span class="choice__lbl">E-mail marketing</span><span class="choice__desc">Flows · retence</span></span></label>
+            <label class="choice"><input type="checkbox" name="service" value="RTB"><span class="choice__box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><span class="choice__lbl">RTB &amp; programatika</span><span class="choice__desc">DSP · retargeting</span></span></label>
+            <label class="choice"><input type="checkbox" name="service" value="UX"><span class="choice__box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><span class="choice__lbl">UX &amp; UI design</span><span class="choice__desc">Konverzní stránky</span></span></label>
+            <label class="choice"><input type="checkbox" name="service" value="Growth"><span class="choice__box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><span class="choice__lbl">Růstové experimenty</span><span class="choice__desc">CRO · A/B testy</span></span></label>
+          </div>
+          <span class="error" role="alert" hidden data-error="service">Vyberte prosím alespoň jednu službu.</span>
+          <div class="form__nav">
+            <span></span>
+            <button type="button" class="btn btn--primary" data-next>Pokračovat
+              <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="step" data-step="2" aria-hidden="true" inert>
+          <h4 class="step__title">Jaký je <em>rozsah</em>?</h4>
+          <p class="step__sub">Pomůže nám sestavit správný tým.</p>
+          <div class="choices" style="grid-template-columns:1fr">
+            <label class="choice choice--radio"><input type="radio" name="scope" value="Startuji"><span class="choice__box"></span><span><span class="choice__lbl">Startuji</span><span class="choice__desc">Do 100 000 Kč / měsíc mediální budget</span></span></label>
+            <label class="choice choice--radio"><input type="radio" name="scope" value="Škáluji"><span class="choice__box"></span><span><span class="choice__lbl">Škáluji</span><span class="choice__desc">100–500 000 Kč / měsíc</span></span></label>
+            <label class="choice choice--radio"><input type="radio" name="scope" value="Enterprise"><span class="choice__box"></span><span><span class="choice__lbl">Velký rozpočet</span><span class="choice__desc">500 000 Kč+ / měsíc · enterprise tým</span></span></label>
+          </div>
+          <span class="error" role="alert" hidden data-error="scope">Vyberte prosím jednu možnost.</span>
+          <div class="form__nav">
+            <button type="button" class="btn btn--outline-dark" data-prev>← Zpět</button>
+            <button type="button" class="btn btn--primary" data-next>Pokračovat
+              <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="step" data-step="3" aria-hidden="true" inert>
+          <h4 class="step__title">Kam se <em>ozveme</em>?</h4>
+          <p class="step__sub">Odpovíme do 24 hodin v pracovní dny.</p>
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+            <label class="field"><span class="field__lbl">Jméno *</span><input class="input" name="name" required></label>
+            <label class="field"><span class="field__lbl">Firma</span><input class="input" name="company"></label>
+            <label class="field"><span class="field__lbl">E-mail *</span><input class="input" type="email" name="email" required></label>
+            <label class="field"><span class="field__lbl">Telefon</span><input class="input" type="tel" name="phone"></label>
+            <label class="field" style="grid-column:1/-1"><span class="field__lbl">Poznámka</span><textarea class="textarea" name="note" placeholder="Krátce o vaší situaci, cílech nebo kanálech."></textarea></label>
+            <label class="check" style="grid-column:1/-1"><input type="checkbox" name="consent" required><span>Souhlasím se zpracováním osobních údajů za účelem kontaktu. Nepředáváme je třetím stranám.</span></label>
+          </div>
+          <span class="error" role="alert" hidden data-error="contact">Vyplňte prosím povinná pole a udělte souhlas.</span>
+          <div class="form__nav">
+            <button type="button" class="btn btn--outline-dark" data-prev>← Zpět</button>
+            <button type="submit" class="btn btn--primary">Odeslat poptávku
+              <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="step success" data-step="4" aria-hidden="true" inert role="status">
+          <div class="success__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <div class="success__title">Díky, ozveme se do 24 hodin.</div>
+          <p class="success__text">Poptávka dorazila. Podíváme se na váš stav a napíšeme konkrétní návrh postupu.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =========== FOOTER =========== -->
+<footer class="footer">
+  <div class="container container--wide">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand"><span class="brand__mark" aria-hidden="true">g</span>growtix</div>
+        <p class="footer__blurb">Performance agency. Akvizice, analytika a růstové experimenty v jedné datové ose.</p>
+        <div class="footer__loc">Praha · Brno · CZ</div>
+      </div>
+      <div>
+        <div class="footer__heading">Služby</div>
+        <ul class="footer__list">
+          <li><a href="sluzby/ppc.html">PPC &amp; Paid social</a></li>
+          <li><a href="sluzby/seo.html">SEO &amp; GEO</a></li>
+          <li><a href="sluzby/email.html">E-mail marketing</a></li>
+          <li><a href="sluzby/growth-hacking.html">Growth &amp; LinkedIn</a></li>
+          <li><a href="sluzby/ux-ui.html">UX &amp; UI design</a></li>
+          <li><a href="#services">RTB &amp; programatika</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__heading">Firma</div>
+        <ul class="footer__list">
+          <li><a href="#approach">Přístup</a></li>
+          <li><a href="#work">Reference</a></li>
+          <li><a href="#journal">Journal</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#cta">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer__news">
+        <div class="footer__heading">Newsletter</div>
+        <p style="color:var(--on-dark-2); font-size: var(--t-sm); margin: 0 0 0.8rem">Jednou měsíčně. Jen co funguje.</p>
+        <form onsubmit="event.preventDefault(); this.querySelector('input').value=''; this.querySelector('button').textContent='Díky ✓';">
+          <input type="email" placeholder="vas@email.cz" aria-label="E-mail" required>
+          <button type="submit" class="btn btn--primary" style="width:100%">Přihlásit</button>
+        </form>
+        <div class="footer__social" aria-label="Sociální sítě">
+          <a href="#" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.8h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.75 2.63 4.75 6.05V21h-4v-5.4c0-1.3 0-2.95-1.8-2.95s-2.1 1.4-2.1 2.85V21H9z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.5a3 3 0 0 0-2.1-2.1C19.5 4 12 4 12 4s-7.5 0-9.4.4A3 3 0 0 0 .5 6.5C.1 8.4.1 12 .1 12s0 3.6.4 5.5a3 3 0 0 0 2.1 2.1C4.5 20 12 20 12 20s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1c.4-1.9.4-5.5.4-5.5s0-3.6-.4-5.5zM9.75 15.5v-7l6 3.5z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__legal">
+      <div>© 2026 Growtix s.r.o. · IČO 12345678</div>
+      <div class="footer__legal-links">
+        <a href="#">Ochrana údajů</a>
+        <a href="#">Obchodní podmínky</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a href="#cta" class="btn btn--primary" style="width:100%">Domluvit hovor
+    <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+  </a>
+</div>
+
+<script>
+(function(){
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Mega menu
+  var mTrigger = document.getElementById('gxMegaTrigger');
+  var mega = document.getElementById('gxMega');
+  if (mTrigger && mega) {
+    function closeMega(){ mega.classList.remove('is-open'); mTrigger.setAttribute('aria-expanded','false'); }
+    function openMega(){ mega.classList.add('is-open'); mTrigger.setAttribute('aria-expanded','true'); }
+    mTrigger.addEventListener('click', function(e){ e.stopPropagation(); if (mega.classList.contains('is-open')) closeMega(); else openMega(); });
+    document.addEventListener('click', function(e){ if (!mega.contains(e.target) && e.target !== mTrigger && !mTrigger.contains(e.target)) closeMega(); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeMega(); });
+    mega.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMega); });
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href'); if (id.length < 2) return;
+      var target = document.querySelector(id); if (!target) return;
+      e.preventDefault();
+      var offset = (document.getElementById('gxHeader').offsetHeight || 68) + 12;
+      var y = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: y, behavior: reduceMotion ? 'auto' : 'smooth' });
+    });
+  });
+
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){ if (entry.isIntersecting) { entry.target.classList.add('is-on'); io.unobserve(entry.target); } });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('is-on'); });
+  }
+
+  var rot = document.getElementById('gxRotator');
+  if (rot && !reduceMotion) {
+    var words = rot.querySelectorAll('.rot__word');
+    var idx = 0;
+    setInterval(function(){
+      idx = (idx + 1) % (words.length - 1);
+      rot.style.transform = 'translateY(-' + idx + 'em)';
+    }, 2200);
+  }
+
+  var faq = document.getElementById('gxFaq');
+  if (faq) {
+    faq.querySelectorAll('.faq-item__btn').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var item = btn.closest('.faq-item');
+        var open = item.getAttribute('data-open') === 'true';
+        faq.querySelectorAll('.faq-item').forEach(function(i){ i.setAttribute('data-open','false'); i.querySelector('.faq-item__btn').setAttribute('aria-expanded','false'); });
+        if (!open) { item.setAttribute('data-open','true'); btn.setAttribute('aria-expanded','true'); }
+      });
+    });
+  }
+
+  var form = document.getElementById('gxLeadForm');
+  if (form) {
+    var steps = form.querySelectorAll('.step');
+    var dots = form.querySelectorAll('.form__dot');
+    var num = document.getElementById('gxStepNum');
+    var current = 1;
+    function showStep(n){
+      current = n;
+      steps.forEach(function(s){
+        var sn = parseInt(s.getAttribute('data-step'), 10);
+        var active = sn === n;
+        s.classList.toggle('is-active', active);
+        if (active) { s.removeAttribute('aria-hidden'); s.removeAttribute('inert'); } else { s.setAttribute('aria-hidden','true'); s.setAttribute('inert',''); }
+      });
+      dots.forEach(function(d){
+        var dn = parseInt(d.getAttribute('data-dot'), 10);
+        d.classList.toggle('is-active', dn === n);
+        d.classList.toggle('is-done', dn < n);
+      });
+      if (num) num.textContent = String(Math.min(n, 3)).padStart(2, '0');
+    }
+    function hideError(name){ var el = form.querySelector('[data-error="'+name+'"]'); if (el) el.hidden = true; }
+    function showError(name){ var el = form.querySelector('[data-error="'+name+'"]'); if (el) el.hidden = false; }
+    function validate(step){
+      if (step === 1) { var any = form.querySelectorAll('input[name="service"]:checked').length > 0; if (!any) { showError('service'); return false; } hideError('service'); return true; }
+      if (step === 2) { var any = form.querySelectorAll('input[name="scope"]:checked').length > 0; if (!any) { showError('scope'); return false; } hideError('scope'); return true; }
+      if (step === 3) {
+        var name = form.name.value.trim(); var email = form.email.value.trim(); var consent = form.consent.checked;
+        form.name.setAttribute('aria-invalid', name ? 'false' : 'true');
+        form.email.setAttribute('aria-invalid', (email && /.+@.+\..+/.test(email)) ? 'false' : 'true');
+        if (!name || !email || !/.+@.+\..+/.test(email) || !consent) { showError('contact'); return false; }
+        hideError('contact'); return true;
+      }
+      return true;
+    }
+    form.querySelectorAll('[data-next]').forEach(function(btn){ btn.addEventListener('click', function(){ if (!validate(current)) return; showStep(Math.min(current + 1, 3)); }); });
+    form.querySelectorAll('[data-prev]').forEach(function(btn){ btn.addEventListener('click', function(){ showStep(Math.max(current - 1, 1)); }); });
+    form.addEventListener('submit', function(e){ e.preventDefault(); if (!validate(3)) return; showStep(4); });
+  }
+})();
+</script>
+
+</body>
+</html>

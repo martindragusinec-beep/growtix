@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>UX & UI Design — Growtix</title>
+<meta name="description" content="UX audit, UI design a implementace. Najdeme bariéry, které brání zákazníkům v nákupu, a rovnou je opravíme. Konverze, ne dokumenty.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/growtix.css">
+</head>
+<body>
+
+<header class="header" id="gxHeader">
+  <div class="container container--wide">
+    <div class="header__inner">
+      <a href="../index.html" class="brand" aria-label="Growtix — domů">
+        <span class="brand__mark" aria-hidden="true">g</span>
+        <span>growtix</span>
+      </a>
+      <nav class="nav" aria-label="Hlavní">
+        <button type="button" class="nav__link nav__trigger" id="gxMegaTrigger" aria-haspopup="true" aria-expanded="false" aria-controls="gxMega">
+          Služby
+          <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <a href="../index.html#approach" class="nav__link">Přístup</a>
+        <a href="../index.html#work" class="nav__link">Práce</a>
+        <a href="../index.html#journal" class="nav__link">Journal</a>
+        <a href="../index.html#faq" class="nav__link">FAQ</a>
+      </nav>
+      <div class="header__actions">
+        <button class="burger" aria-label="Menu"><svg width="16" height="12" viewBox="0 0 18 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M1 1h16M1 7h16M1 13h16"/></svg></button>
+        <a href="#cta" class="btn btn--primary">Nezávazná konzultace</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mega" id="gxMega" role="region" aria-label="Služby">
+    <div class="container container--wide">
+      <div class="mega__inner">
+        <div class="mega__list">
+          <a href="ppc.html" class="mega__item"><span class="mega__num">01</span><span class="mega__title">PPC &amp; <em>Paid</em></span><span class="mega__desc">Google · Meta · LinkedIn · TikTok</span></a>
+          <a href="seo.html" class="mega__item"><span class="mega__num">02</span><span class="mega__title">SEO &amp; <em>GEO</em></span><span class="mega__desc">Organika + LLM viditelnost</span></a>
+          <a href="email.html" class="mega__item"><span class="mega__num">03</span><span class="mega__title"><em>E-mail</em> marketing</span><span class="mega__desc">Flows · retence · transakce</span></a>
+          <a href="growth-hacking.html" class="mega__item"><span class="mega__num">04</span><span class="mega__title">Growth &amp; <em>LinkedIn</em></span><span class="mega__desc">B2B outreach · automatizace</span></a>
+          <a href="../index.html#services" class="mega__item"><span class="mega__num">05</span><span class="mega__title">RTB &amp; <em>DSP</em></span><span class="mega__desc">Programatika · retargeting</span></a>
+          <a href="ux-ui.html" class="mega__item" aria-current="page"><span class="mega__num">06</span><span class="mega__title">UX &amp; <em>UI</em></span><span class="mega__desc">Audit · design · implementace</span></a>
+        </div>
+        <div class="mega__cta">
+          <div class="mega__cta-title">UX audit <em>do 5</em> pracovních dní.</div>
+          <a href="#cta" class="btn btn--dark" style="align-self:flex-start">Objednat audit
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- =========== HERO — annotated audit =========== -->
+<section class="ux-hero" aria-labelledby="heroTitle">
+  <div class="container container--wide">
+    <div class="ux-hero__grid">
+
+      <div class="ux-hero__copy">
+        <h1 class="ux-hero__title" id="heroTitle">
+          Stránka, která <em>neprodává,</em><br>
+          je chyba designu &mdash;<br>
+          ne reklamy.
+        </h1>
+        <p class="ux-hero__lead">Máte vysokou návštěvnost, ale tržby stagnují? Problém obvykle neleží v reklamě, ale v tom, co se děje po kliknutí. Najdeme bariéry v nákupním procesu a rovnou je opravíme.</p>
+        <div class="ux-hero__actions">
+          <a href="#cta" class="btn btn--primary">Chci UX audit zdarma
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+          <a href="#services" class="btn btn--outline-light">Jak to děláme</a>
+        </div>
+      </div>
+
+      <aside class="ux-audit" aria-hidden="true">
+        <header class="ux-audit__head">
+          <span class="ux-audit__label">Audit · landing page</span>
+          <span class="ux-audit__live"><span class="ux-audit__pulse"></span>4 nálezy</span>
+        </header>
+
+        <div class="ux-audit__frame">
+          <div class="ux-audit__chrome">
+            <span class="ux-audit__dot ux-audit__dot--r"></span>
+            <span class="ux-audit__dot ux-audit__dot--y"></span>
+            <span class="ux-audit__dot ux-audit__dot--g"></span>
+            <span class="ux-audit__url">nordix.cz</span>
+          </div>
+
+          <div class="ux-audit__page">
+            <div class="ux-audit__block ux-audit__block--nav"></div>
+            <div class="ux-audit__block ux-audit__block--hero">
+              <span class="ux-audit__pin" data-pin="1" style="--row: 1">01</span>
+            </div>
+            <div class="ux-audit__row">
+              <div class="ux-audit__block ux-audit__block--card"></div>
+              <div class="ux-audit__block ux-audit__block--card"></div>
+              <div class="ux-audit__block ux-audit__block--card">
+                <span class="ux-audit__pin" data-pin="2" style="--row: 2">02</span>
+              </div>
+            </div>
+            <div class="ux-audit__block ux-audit__block--form">
+              <span class="ux-audit__line"></span>
+              <span class="ux-audit__line"></span>
+              <span class="ux-audit__line"></span>
+              <span class="ux-audit__line"></span>
+              <span class="ux-audit__pin" data-pin="3" style="--row: 3">03</span>
+            </div>
+            <div class="ux-audit__block ux-audit__block--footer">
+              <span class="ux-audit__pin" data-pin="4" style="--row: 4">04</span>
+            </div>
+          </div>
+        </div>
+
+        <ol class="ux-audit__notes" id="auditNotes">
+          <li class="ux-audit__note" data-pin="1">
+            <span class="ux-audit__n">01</span>
+            <span class="ux-audit__body">
+              <em>Hierarchie nadpisů</em>
+              <span>Hero má 3 H1 současně. Oko neví, kde má začít.</span>
+            </span>
+          </li>
+          <li class="ux-audit__note" data-pin="2">
+            <span class="ux-audit__n">02</span>
+            <span class="ux-audit__body">
+              <em>Nejasné CTA</em>
+              <span>4 tlačítka stejné váhy &mdash; která akce je primární?</span>
+            </span>
+          </li>
+          <li class="ux-audit__note" data-pin="3">
+            <span class="ux-audit__n">03</span>
+            <span class="ux-audit__body">
+              <em>Formulář</em>
+              <span>7 polí v jednom kroku. Stačí 3 &mdash; zbytek doplníme po objednávce.</span>
+            </span>
+          </li>
+          <li class="ux-audit__note" data-pin="4">
+            <span class="ux-audit__n">04</span>
+            <span class="ux-audit__body">
+              <em>Chybí social proof</em>
+              <span>Žádné recenze, loga partnerů ani počty objednávek &mdash; nikomu nevěříme.</span>
+            </span>
+          </li>
+        </ol>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========== PROBLEM — editorial spread =========== -->
+<section class="band ux-problem" aria-labelledby="probTitle">
+  <div class="container">
+    <div class="ux-problem__grid">
+
+      <div class="ux-problem__quote">
+        <span class="ux-problem__num">53<span class="ux-problem__num-u">%</span></span>
+        <p class="ux-problem__lead">návštěvníků odejde do <strong>3 vteřin</strong>, pokud web zaváhá, není čitelný nebo působí zastarale.</p>
+        <p class="ux-problem__body">Špatná uživatelská zkušenost stojí firmy víc peněz než neúspěšná kampaň. Když se zákazník na webu ztrácí, proces nákupu je složitý nebo vzhled působí nedůvěryhodně &mdash; jednoduše odejde ke konkurenci. A vy platíte za kliknutí, ze kterého není objednávka.</p>
+      </div>
+
+      <div class="ux-problem__list">
+        <h3 class="ux-problem__title" id="probTitle">Co na webech <em>nejčastěji</em> nacházíme</h3>
+        <ol class="ux-mistakes">
+          <li class="ux-mistake">
+            <span class="ux-mistake__num">01</span>
+            <div>
+              <h4>Příliš mnoho kroků</h4>
+              <p>Cesta k objednávce je orientační běh přes 6 obrazovek. Každý další klik znamená 10 % uživatelů pryč.</p>
+            </div>
+          </li>
+          <li class="ux-mistake">
+            <span class="ux-mistake__num">02</span>
+            <div>
+              <h4>Zmatené ovládání</h4>
+              <p>Návštěvník neví, co má udělat. Chybí jasné primární CTA &mdash; každé tlačítko se hlásí o pozornost stejně.</p>
+            </div>
+          </li>
+          <li class="ux-mistake">
+            <span class="ux-mistake__num">03</span>
+            <div>
+              <h4>Neviditelné informace</h4>
+              <p>Zákazník nenajde to, co potřebuje k rozhodnutí. Cena, dostupnost, recenze &mdash; tři kliky daleko.</p>
+            </div>
+          </li>
+          <li class="ux-mistake">
+            <span class="ux-mistake__num">04</span>
+            <div>
+              <h4>Nedůvěryhodný vzhled</h4>
+              <p>Design, který v roce 2026 už neobstojí. Bez sociálního důkazu, bez vizuální hierarchie &mdash; bez prodeje.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========== APPROACH — horizontal pipeline =========== -->
+<section class="band band--dark ux-approach" aria-labelledby="apprTitle">
+  <div class="container">
+    <header class="ux-approach__head">
+      <h2 id="apprTitle" class="ux-approach__title">
+        Najdeme chyby &mdash; <em>a rovnou je opravíme</em>.
+      </h2>
+      <p class="ux-approach__lead">Většina agentur předá obsáhlý PDF dokument s doporučeními a tím jejich práce končí. My jdeme dál: audit, design i implementace pod jednou střechou.</p>
+    </header>
+
+    <div class="ux-pipeline">
+      <article class="ux-stage" style="--i: 0">
+        <span class="ux-stage__n">01</span>
+        <h4 class="ux-stage__title">Audit</h4>
+        <p class="ux-stage__body">Najdeme, kde se uživatelé zasekávají. Heatmapy, session recordings, heuristický audit, data z analytiky.</p>
+      </article>
+      <span class="ux-pipeline__arrow" aria-hidden="true">
+        <svg viewBox="0 0 60 12" fill="none" stroke="currentColor" stroke-width="1"><path d="M2 6h54m-5-4 5 4-5 4"/></svg>
+      </span>
+      <article class="ux-stage" style="--i: 1">
+        <span class="ux-stage__n">02</span>
+        <h4 class="ux-stage__title">Design</h4>
+        <p class="ux-stage__body">Wireframe → high-fidelity UI → design systém. Vše na míru značce, psychologii prodeje a SEO.</p>
+      </article>
+      <span class="ux-pipeline__arrow" aria-hidden="true">
+        <svg viewBox="0 0 60 12" fill="none" stroke="currentColor" stroke-width="1"><path d="M2 6h54m-5-4 5 4-5 4"/></svg>
+      </span>
+      <article class="ux-stage" style="--i: 2">
+        <span class="ux-stage__n">03</span>
+        <h4 class="ux-stage__title">Implementace</h4>
+        <p class="ux-stage__body">Naši vývojáři nasadí změny přímo do vašeho systému. A/B testujeme, měříme konverze, iterujeme.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========== SERVICES — wide editorial spreads =========== -->
+<section class="band band--darker ux-services" id="services" aria-labelledby="srvTitle">
+  <div class="container">
+    <header class="ux-services__head">
+      <h2 id="srvTitle" class="ux-services__title">
+        Tři pilíře <em>jednoho designu</em>
+      </h2>
+      <p class="ux-services__lead">UX bez UI je tabulka. UI bez UX je obrázek. Implementace bez obojího je zbytečná. Děláme všechny tři.</p>
+    </header>
+
+    <div class="ux-services__list">
+
+      <article class="ux-srv">
+        <div class="ux-srv__col-num">
+          <span class="ux-srv__num">01</span>
+          <span class="ux-srv__kicker">UX</span>
+        </div>
+        <div class="ux-srv__col-main">
+          <h3 class="ux-srv__title">UX audit &amp; analýza <em>chování</em></h3>
+          <p class="ux-srv__body">Přestaneme hádat a začneme pracovat s daty. Analytika, heatmapy a session recordings ukážou, kde se uživatelé na webu zasekávají, kam scrollují a co ignorují. Heuristický audit pak prověří web podle osvědčených pravidel použitelnosti.</p>
+          <ul class="ux-srv__tags">
+            <li>GA4 funnel analysis</li>
+            <li>Hotjar / Microsoft Clarity</li>
+            <li>Heuristický audit</li>
+            <li>User testing</li>
+            <li>Form analytics</li>
+          </ul>
+        </div>
+        <div class="ux-srv__col-deliv">
+          <span class="ux-srv__deliv-label">Výstup</span>
+          <p class="ux-srv__deliv-body">Audit report s konkrétními bariérami, prioritizovaný podle dopadu na konverzi &mdash; ne 80stránkový PDF teorie.</p>
+        </div>
+      </article>
+
+      <article class="ux-srv">
+        <div class="ux-srv__col-num">
+          <span class="ux-srv__num">02</span>
+          <span class="ux-srv__kicker">UI</span>
+        </div>
+        <div class="ux-srv__col-main">
+          <h3 class="ux-srv__title">UI design &amp; <em>vizuální identita</em></h3>
+          <p class="ux-srv__body">Moderní, přehledný vzhled, který odpovídá vaší značce a psychologii prodeje. Design u nás není „o hezkých obrázcích" &mdash; je to nástroj konverze. Responzivní napříč zařízeními, postavený na design systému, který půjde dlouhodobě udržovat.</p>
+          <ul class="ux-srv__tags">
+            <li>Wireframe → hi-fi</li>
+            <li>Design systém</li>
+            <li>Brand &amp; ilustrace</li>
+            <li>Responzivita</li>
+            <li>Accessibility (WCAG)</li>
+          </ul>
+        </div>
+        <div class="ux-srv__col-deliv">
+          <span class="ux-srv__deliv-label">Výstup</span>
+          <p class="ux-srv__deliv-body">Figma soubor s kompletním design systémem, hi-fi obrazovky a komponenty &mdash; připravené k implementaci.</p>
+        </div>
+      </article>
+
+      <article class="ux-srv">
+        <div class="ux-srv__col-num">
+          <span class="ux-srv__num">03</span>
+          <span class="ux-srv__kicker">DEV</span>
+        </div>
+        <div class="ux-srv__col-main">
+          <h3 class="ux-srv__title">Implementace &amp; <em>průběžná optimalizace</em></h3>
+          <p class="ux-srv__body">To nejdůležitější na konec. Návrhy nezůstávají v šuplíku &mdash; naši vývojáři je nasadí přímo do vašeho systému. Poté A/B testujeme jednotlivé varianty a měříme, která skutečně přináší více objednávek. Web se učí z každého návštěvníka.</p>
+          <ul class="ux-srv__tags">
+            <li>Front-end (React, Vue)</li>
+            <li>Shoptet · Shopify · WooCommerce</li>
+            <li>A/B testing</li>
+            <li>Performance &amp; Core Web Vitals</li>
+            <li>CMS integrace</li>
+          </ul>
+        </div>
+        <div class="ux-srv__col-deliv">
+          <span class="ux-srv__deliv-label">Výstup</span>
+          <p class="ux-srv__deliv-body">Web nasazený v produkci, s napojeným analytickým stackem a první sadou A/B testů v běhu.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========== PROCESS — chapter spreads =========== -->
+<section class="band ux-process" aria-labelledby="procTitle">
+  <div class="container">
+    <header class="ux-process__head">
+      <span class="ux-process__edge">Spolupráce · 5 kapitol</span>
+      <h2 id="procTitle" class="ux-process__title">
+        Jak probíhá <em>spolupráce</em>
+      </h2>
+      <p class="ux-process__lead">Pět kapitol od poznání byznysu k měřitelnému růstu konverzí. Žádné šuplíky &mdash; vše končí v ostrém provozu.</p>
+    </header>
+
+    <ol class="ux-chapters" id="uxChapters" role="list">
+      <li class="ux-chapter" data-step="0">
+        <div class="ux-chapter__num" aria-hidden="true">01</div>
+        <div class="ux-chapter__main">
+          <span class="ux-chapter__time">Týden 1 · Discovery</span>
+          <h3 class="ux-chapter__title">Poznáme váš byznys</h3>
+          <p class="ux-chapter__body">Začínáme rozhovorem, ne tabulkou. Pochopíme vaše cíle, marže, zákazníky a kde je vaše skutečná konkurence. Bez tohoto kontextu je každý design výstřel naslepo.</p>
+          <ul class="ux-chapter__tags">
+            <li>Kick-off workshop</li>
+            <li>Margin map</li>
+            <li>ICP &amp; personas</li>
+            <li>Competitive scan</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="ux-chapter" data-step="1">
+        <div class="ux-chapter__num" aria-hidden="true">02</div>
+        <div class="ux-chapter__main">
+          <span class="ux-chapter__time">Týden 2 · Audit</span>
+          <h3 class="ux-chapter__title">Odhalíme slabá místa</h3>
+          <p class="ux-chapter__body">Heatmapy, session recordings, GA4 funnel, heuristický audit. Najdeme bariéry v nákupním procesu &mdash; a prioritizujeme je podle dopadu na konverzi, ne podle estetiky.</p>
+          <ul class="ux-chapter__tags">
+            <li>Hotjar &amp; Clarity</li>
+            <li>Funnel analytics</li>
+            <li>Heuristický audit</li>
+            <li>Form analytics</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="ux-chapter" data-step="2">
+        <div class="ux-chapter__num" aria-hidden="true">03</div>
+        <div class="ux-chapter__main">
+          <span class="ux-chapter__time">Týden 3–6 · Design</span>
+          <h3 class="ux-chapter__title">Navrhneme řešení</h3>
+          <p class="ux-chapter__body">Wireframes &mdash; pak hi-fi UI &mdash; pak design systém. Návrh zaměřený na maximální konverzi, který sedí na vaši značku a zároveň půjde dlouhodobě udržovat ve vašem týmu.</p>
+          <ul class="ux-chapter__tags">
+            <li>Wireframes</li>
+            <li>Hi-fi screens</li>
+            <li>Design system</li>
+            <li>Component library</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="ux-chapter ux-chapter--accent" data-step="3">
+        <div class="ux-chapter__num" aria-hidden="true">04</div>
+        <div class="ux-chapter__main">
+          <span class="ux-chapter__time">Týden 7+ · Implementace</span>
+          <h3 class="ux-chapter__title">Uvedeme změny do života</h3>
+          <p class="ux-chapter__body">Návrhy nezůstanou v Figmě. Naši vývojáři je nasadí přímo do vašeho systému &mdash; Shoptet, Shopify, WooCommerce nebo headless. S napojeným analytickým stackem od první návštěvy.</p>
+          <ul class="ux-chapter__tags">
+            <li>Front-end dev</li>
+            <li>CMS integrace</li>
+            <li>Analytics setup</li>
+            <li>Performance audit</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="ux-chapter" data-step="4">
+        <div class="ux-chapter__num" aria-hidden="true">05</div>
+        <div class="ux-chapter__main">
+          <span class="ux-chapter__time">Měsíc 3+ · Optimalizace</span>
+          <h3 class="ux-chapter__title">Měříme &amp; iterujeme</h3>
+          <p class="ux-chapter__body">A/B testy, conversion rate, spokojenost. Web se učí z každého návštěvníka. Měsíční review s vámi, propojení na obchodní data, dlouhodobý růst kohort &mdash; ne jen jednorázový redesign.</p>
+          <ul class="ux-chapter__tags">
+            <li>A/B testing</li>
+            <li>Monthly review</li>
+            <li>Cohort growth</li>
+            <li>Continuous iteration</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- =========== OUTCOMES — serif statements =========== -->
+<section class="band band--dark ux-outcomes" aria-labelledby="outTitle">
+  <div class="container">
+    <header class="ux-outcomes__head">
+      <span class="ux-outcomes__edge">Co získáte</span>
+      <h2 id="outTitle" class="ux-outcomes__title">
+        Stejný traffic. <em>Víc objednávek.</em>
+      </h2>
+    </header>
+
+    <ol class="ux-outcomes__list" role="list">
+      <li class="ux-out">
+        <span class="ux-out__num">01</span>
+        <h4 class="ux-out__title">Vyšší tržby &amp; konverze</h4>
+        <p class="ux-out__body">Stejný počet návštěvníků přinese víc objednávek. Konverzní poměr roste o jednotky procent &mdash; což pro většinu e-shopů znamená zlomek ROI z reklamy.</p>
+      </li>
+      <li class="ux-out">
+        <span class="ux-out__num">02</span>
+        <h4 class="ux-out__title">Nižší náklady na marketing</h4>
+        <p class="ux-out__body">Vaše kampaně budou efektivnější &mdash; web už nikoho neodradí. PNO klesne, ROAS roste, CFO spokojený.</p>
+      </li>
+      <li class="ux-out">
+        <span class="ux-out__num">03</span>
+        <h4 class="ux-out__title">Věrnější zákazníci</h4>
+        <p class="ux-out__body">Lidé se vrací tam, kde je nákup rychlý a příjemný. Lifetime value roste, retence se prohlubuje, doporučení přicházejí.</p>
+      </li>
+      <li class="ux-out">
+        <span class="ux-out__num">04</span>
+        <h4 class="ux-out__title">Náskok před konkurencí</h4>
+        <p class="ux-out__body">Profesionální web buduje důvěru, kterou většina konkurence postrádá. Jste tam, kde se nakupuje, ne kde se hledá.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- =========== CTA =========== -->
+<section class="cta-mint" id="cta" aria-labelledby="ctaTitle">
+  <div class="container">
+    <h2 id="ctaTitle" style="font-family: var(--ff-serif); font-weight: 400; font-size: clamp(2.6rem, 5.5vw, 4.2rem); line-height: 1.1; letter-spacing: -0.025em; margin: 1.25rem auto 2rem; text-wrap: balance; max-width: 22ch;">
+      Kde váš web <em style="font-style: italic; display: inline-block; line-height: 1.05; padding-bottom: 0.18em;">ztrácí potenciál?</em>
+    </h2>
+    <p style="color: var(--on-cream-2); font-size: var(--t-lg); line-height: 1.55; margin: 0 auto 2rem; max-width: 38rem;">
+      Dostanete UX audit vašeho webu s konkrétními kroky &mdash; bariéry v nákupním procesu, prioritizace podle dopadu na konverzi. Zdarma, do 5 pracovních dní.
+    </p>
+    <div style="display:flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+      <a href="../index.html#cta" class="btn btn--dark">Chci UX audit zdarma
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+      </a>
+      <a href="../index.html#work" class="btn btn--outline-dark">Vidět referenční práce</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container container--wide">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand"><span class="brand__mark">g</span>growtix</div>
+        <p class="footer__blurb">Performance agentura z Prahy a Brna. Stavíme růst, který nespoří na analytice.</p>
+        <div class="footer__loc">Praha · Brno · EU</div>
+      </div>
+      <div>
+        <div class="footer__heading">Služby</div>
+        <ul class="footer__list">
+          <li><a href="ppc.html">PPC &amp; Paid social</a></li>
+          <li><a href="seo.html">SEO &amp; GEO</a></li>
+          <li><a href="email.html">E-mail marketing</a></li>
+          <li><a href="growth-hacking.html">Growth &amp; LinkedIn</a></li>
+          <li><a href="ux-ui.html">UX &amp; UI design</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__heading">Agentura</div>
+        <ul class="footer__list">
+          <li><a href="../index.html#approach">Přístup</a></li>
+          <li><a href="../index.html#work">Práce</a></li>
+          <li><a href="../index.html#journal">Journal</a></li>
+          <li><a href="../index.html#faq">FAQ</a></li>
+          <li><a href="../index.html#cta">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer__news">
+        <div class="footer__heading">Growth Memo · týdně</div>
+        <input type="email" placeholder="vas@email.cz" aria-label="E-mail">
+        <button class="btn btn--primary" style="width:100%">Přihlásit se</button>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v15.5H.22V8zm7.36 0h4.37v2.12h.06c.61-1.16 2.1-2.37 4.32-2.37 4.62 0 5.48 3.04 5.48 7v8.75h-4.56v-7.76c0-1.85-.03-4.23-2.58-4.23-2.58 0-2.98 2.01-2.98 4.09v7.9H7.58V8z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="X"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 3h3l-7.5 8.5L22 21h-6l-5-6.5L5 21H2l8-9L2 3h6l4.5 6L18 3z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <span>© 2026 Growtix s.r.o. · IČO 123 45 678</span>
+      <div class="footer__legal-links">
+        <a href="#">Zásady ochrany</a>
+        <a href="#">Obchodní podmínky</a>
+        <a href="#">Impressum</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  // Mega menu
+  var mTrigger = document.getElementById('gxMegaTrigger');
+  var mega = document.getElementById('gxMega');
+  if (mTrigger && mega) {
+    function closeMega(){ mega.classList.remove('is-open'); mTrigger.setAttribute('aria-expanded','false'); }
+    function openMega(){ mega.classList.add('is-open'); mTrigger.setAttribute('aria-expanded','true'); }
+    mTrigger.addEventListener('click', function(e){ e.stopPropagation(); mega.classList.contains('is-open') ? closeMega() : openMega(); });
+    document.addEventListener('click', function(e){ if (!mega.contains(e.target) && e.target !== mTrigger && !mTrigger.contains(e.target)) closeMega(); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeMega(); });
+  }
+  // Header scroll state
+  var header = document.getElementById('gxHeader');
+  if (header) {
+    var onScroll = function(){ header.classList.toggle('is-scrolled', window.scrollY > 12); };
+    onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
+  // Cycle "active" state through audit pins
+  var pins = document.querySelectorAll('.ux-audit__pin');
+  var notes = document.querySelectorAll('.ux-audit__note');
+  if (pins.length && notes.length && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var idx = 0;
+    function setActive(i){
+      pins.forEach(function(p){ p.classList.remove('is-active'); });
+      notes.forEach(function(n){ n.classList.remove('is-active'); });
+      pins[i].classList.add('is-active');
+      notes[i].classList.add('is-active');
+    }
+    setActive(0);
+    setInterval(function(){
+      idx = (idx + 1) % pins.length;
+      setActive(idx);
+    }, 2400);
+  }
+
+  // Process timeline — reveal on scroll + traveling beam
+  var procSection = document.querySelector('.ux-process');
+  var beam = document.querySelector('.ux-timeline__beam');
+  var steps = document.querySelectorAll('.ux-tl');
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (procSection) {
+    if ('IntersectionObserver' in window) {
+      var obs = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if (e.isIntersecting) {
+            procSection.classList.add('is-revealed');
+            obs.disconnect();
+            startBeam();
+          }
+        });
+      }, { threshold: 0.25 });
+      obs.observe(procSection);
+    } else {
+      procSection.classList.add('is-revealed');
+      startBeam();
+    }
+  }
+
+  function startBeam(){
+    if (!beam || !steps.length || reduced) return;
+    var n = steps.length;
+    // Positions in % across the rail (rail spans 10%–90%, dots evenly spaced)
+    var positions = [];
+    for (var i = 0; i < n; i++) {
+      positions.push(10 + (80 * i / (n - 1)));
+    }
+    var k = 0;
+    function move(){
+      var pct = positions[k];
+      beam.style.left = pct + '%';
+      steps.forEach(function(s, i){ s.classList.toggle('is-active', i === k); });
+      k = (k + 1) % n;
+    }
+    // first jump after a brief settle, then continuous
+    setTimeout(function(){
+      move();
+      setInterval(move, 1700);
+    }, 800);
+  }
+})();
+</script>
+
+</body>
+</html>
