@@ -556,11 +556,10 @@
     }, 2400);
   }
 
-  // Process timeline — reveal on scroll + traveling beam
+  // Process — reveal on scroll with staggered fade-in
   var procSection = document.querySelector('.ux-process');
-  var beam = document.querySelector('.ux-timeline__beam');
-  var steps = document.querySelectorAll('.ux-tl');
-  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var steps = document.querySelectorAll('.ux-chapter');
+  steps.forEach(function(s, i){ s.style.setProperty('--i', i); });
 
   if (procSection) {
     if ('IntersectionObserver' in window) {
@@ -569,37 +568,13 @@
           if (e.isIntersecting) {
             procSection.classList.add('is-revealed');
             obs.disconnect();
-            startBeam();
           }
         });
-      }, { threshold: 0.25 });
+      }, { threshold: 0.15 });
       obs.observe(procSection);
     } else {
       procSection.classList.add('is-revealed');
-      startBeam();
     }
-  }
-
-  function startBeam(){
-    if (!beam || !steps.length || reduced) return;
-    var n = steps.length;
-    // Positions in % across the rail (rail spans 10%–90%, dots evenly spaced)
-    var positions = [];
-    for (var i = 0; i < n; i++) {
-      positions.push(10 + (80 * i / (n - 1)));
-    }
-    var k = 0;
-    function move(){
-      var pct = positions[k];
-      beam.style.left = pct + '%';
-      steps.forEach(function(s, i){ s.classList.toggle('is-active', i === k); });
-      k = (k + 1) % n;
-    }
-    // first jump after a brief settle, then continuous
-    setTimeout(function(){
-      move();
-      setInterval(move, 1700);
-    }, 800);
   }
 })();
 </script>
